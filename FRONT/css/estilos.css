@@ -1,0 +1,65 @@
+        p{
+            color: green;
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1{
+            color: blue;
+            font-size: 25px ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        body{
+            background-color: rgb(222, 247, 239);
+        }
+
+        .menu{
+            color: rgb(0, 0, 0);
+            font-size: 16px ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+
+        label{
+            color: rgb(0, 0, 0);
+            font-size: 14px ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        span{
+            color: rgb(0, 0, 0);
+            font-size: 14px ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .campo_nome{
+            position: absolute;
+            left: 85px;
+            width: 600px;
+            color: red;
+            background-color: lightgrey;
+        }
+
+        #formulario_cadastro{
+            background-color: yellow;
+        }
+
+        .container{
+            border: 3px solid red;
+            width: 500px;
+        }
+
+        .div1{
+            background-color: yellow;
+        }
+        .div2{
+            background-color: green;
+        }
+        .div3{
+            background-color: lightblue;
+        }
+        .div4{
+            background-color: red;
+        }
