@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Final - Turma 13B - Grupo FindByJava()</title>
-
-    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="/js/usuario.js"></script>
+    <!--<link rel="stylesheet" href="../css/estilos.css"-->
 
     <!-- Chamada da biblioteca do Css do BootStrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -24,7 +24,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="validaLogin()">
     <br><br>
     <div class="container-fluid">
 
@@ -34,13 +34,13 @@
                 <img src="imagens/usuario.png" width="50%">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-5">
-                <p>Nome do usuário</p>
-                <p>RACF</p>
+               <div id="divnome"> </div><br>
+               <div id="divracf"> </div><br>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Logout</a>
+                        <button type="button" class="btn btn-outline-success" onclick="logout()">Logout</button>
                     </li>
                 </ul>
             </div>

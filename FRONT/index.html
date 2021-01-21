@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Final - Turma 13B - Grupo FindByJava()</title>
-
-    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="/js/index.js"></script>
+    <!--<link rel="stylesheet" href="/css/estilos.css">-->
 
     <!-- Chamada da biblioteca do Css do BootStrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -38,14 +38,20 @@
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4"></div>
             <div class="col-lg-4 col-md-4 col-sm-4">
-                <form name="formulario_cadastro" id="formulario_cadastro" method="POST">
-                    <p>User</p>
+                <form name="formulario_cadastro" id="formulario_cadastro">
+                    <p>E-mail ou Racf</p>
                     <input type="text" id="user">
-                    <p>Password</p>
-                    <input type="password" id="password"><br><br>
-                    <button onclick="login()">Login</button>
+                    <br>
+                    <p>Senha</p>
+                    <input type="password" id="password"><br>
+                    <button onclick="login(event)">Login</button>
                 </form>
             </div>
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4" id="output"></div>
             <div class="col-lg-4 col-md-4 col-sm-4"></div>
         </div>
     </div>
