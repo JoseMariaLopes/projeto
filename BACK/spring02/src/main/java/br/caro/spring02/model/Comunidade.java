@@ -26,14 +26,14 @@ public class Comunidade {
     private int id_comunidade;
 
     @Column(name = "nome_comunidade")
-    private int nome_comunidade;
+    private String nome_comunidade;
 
     //@Column(name = "id_usuario")
     //private int id_usuario;
 
     @ManyToOne
     @JoinColumn(name = "id_usuario") // nome da coluna na tabela
-    @JsonIgnoreProperties("comunidades") // atributo do User que não deve ser preenchido
+    //@JsonIgnoreProperties("comunidades") // atributo do User que não deve ser preenchido
     private User usuario;
 
     public int getId_comunidade() {
@@ -44,11 +44,11 @@ public class Comunidade {
         this.id_comunidade = id_comunidade;
     }
 
-    public int getNome_comunidade() {
+    public String getNome_comunidade() {
         return nome_comunidade;
     }
 
-    public void setNome_comunidade(int nome_comunidade) {
+    public void setNome_comunidade(String nome_comunidade) {
         this.nome_comunidade = nome_comunidade;
     }
 

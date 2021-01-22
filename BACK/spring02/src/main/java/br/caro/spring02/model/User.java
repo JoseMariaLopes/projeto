@@ -19,6 +19,7 @@ import lombok.Setter;
 //@Table(name = "user")
 @Table(name = "tbl_usuario")
 @Getter
+
 @Setter
 public class User {
     @Id // chave primária

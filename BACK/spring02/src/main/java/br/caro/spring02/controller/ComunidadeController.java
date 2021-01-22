@@ -1,28 +1,35 @@
 package br.caro.spring02.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+//import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+//import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+//import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.caro.spring02.model.Comunidade;
+import br.caro.spring02.model.User;
 import br.caro.spring02.repository.ComunidadeRepo;
 
 @RestController
-@RequestMapping("/comunidades")
+@CrossOrigin("*")
+
+@RequestMapping("/comunidade")
 public class ComunidadeController {
     @Autowired
     private ComunidadeRepo repo;
 
-    @GetMapping("/id/{id}")
-    public ResponseEntity<Comunidade> buscaPorId(@PathVariable int id){
-        Comunidade comunidade = repo.findById(id).orElse(null);
-        if (comunidade != null) {
-            return ResponseEntity.ok(comunidade); // 200
-        }
-        return ResponseEntity.notFound().build(); // 404
+    @PostMapping("/user")
+    public List<Comunidade> listarComunidadesPorUsuario(@RequestBody User user){
+        List<Comunidade> lista = repo.findByUsuario(user);
+
+        return lista;
 
     }
 }

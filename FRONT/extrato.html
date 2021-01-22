@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Final - Turma 13B - Grupo FindByJava()</title>
-
+    <script src="/js/extrato.js"></script>
     <link rel="stylesheet" href="../css/estilos.css">
 
     <!-- Chamada da biblioteca do Css do BootStrap-->
@@ -24,7 +24,7 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="validaLogin()">
     <br><br>
     <div class="container-fluid">
 
@@ -33,7 +33,6 @@
 
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8">
-                <p>Nome da Comunidade</p>
 
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
@@ -48,21 +47,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-1 col-md-1 col-sm-1"></div>
-            <div class="col-lg-10 col-md-10 col-sm-10">
+            <div class="col-lg-10 col-md-10 col-sm-10" id="tabela">
                 <!--table border="1" width="100%" class="menu"-->
-                    <table class="table table-borderless">
-                    <tr>
-                        <td><fieldset>
-                            <legend>Extrato<br></legend>
-                        </td>   
-                    </tr>
-                
-                    <tr>
-                        <td align="center">Data</td>
-                        <td align="center">Descrição</td>
-                        <td align="center">Percentual</td>
-                    </tr>
-                </table>
+
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1"></div>
     </div>
