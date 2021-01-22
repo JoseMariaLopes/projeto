@@ -36,7 +36,7 @@ function tratarRetorno(retorno) {
 
 function acessoPermitido(user) {
     localStorage.setItem("userLogged", JSON.stringify(user));
-    localStorage.setItem("racf", JSON.stringify(user));
-    localStorage.setItem("nome", JSON.stringify(user));
+    //localStorage.setItem("racf", JSON.stringify(user));
+    //localStorage.setItem("nome", JSON.stringify(user));
     window.location = "usuario.html"
 }
